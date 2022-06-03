@@ -1,0 +1,22 @@
+<form (submit)="addItem()">
+  <section>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">info</mat-icon>
+    <h2>Adicione uma nova vaga</h2>
+    <p>
+      Para adicionar uma nova vaga, basta preencher os campos de nome e
+      descrição corretamente
+    </p>
+    <p>
+      Lembre-se de verificar se os campos foram <b>preenchidos corretamente</b>
+    </p>
+  </section>
+  <fieldset>
+    <label for="name">Nome:</label>
+    <input id="name" [formControl]="name" />
+  </fieldset>
+  <fieldset>
+    <label for="description">Descrição</label>
+    <textarea id="description" [formControl]="description"></textarea>
+  </fieldset>
+  <button mat-raised-button color="primary" type="submit">Adicionar</button>
+</form>

@@ -1,0 +1,18 @@
+<div *ngIf="items?.length === 0" class="empty">
+  <h2>Nenhuma vaga cadastrada</h2>
+  <p>Você ainda não cadastrou nenhuma vaga</p>
+  <a routerLink="/nova" routerLinkActive="active">
+    <button mat-raised-button color="primary">Cadastre agora</button>
+  </a>
+</div>
+<ul role="list" *ngFor="let item of items">
+  <li role="listitem">
+    <div>
+      <h2 class="name">{{ item.name }}</h2>
+      <p class="descripiton">{{ item.description }}</p>
+    </div>
+    <button mat-icon-button (click)="removeItem(item.id)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </li>
+</ul>

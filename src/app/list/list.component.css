@@ -1,0 +1,45 @@
+ul{
+  padding: 0 1.65rem;
+  list-style: none;
+}
+
+li{
+  max-width: 480px;
+  margin: 0 auto;
+  font-size: 1rem;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 3px 8px #b7b7b7;
+}
+
+li div{
+  width: 100%;
+}
+
+li h2{
+  margin: 0;
+}
+
+li p{
+  color: #929292;
+}
+
+.name{
+  padding: 0
+}
+
+.empty{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 320px;
+  position: absolute;
+  height: fit-content;
+}
+
+.empty h2{
+  margin: 0;
+}

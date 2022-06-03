@@ -1,0 +1,45 @@
+form{
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 2rem;
+  flex-direction: column;
+}
+
+section{
+  padding: 1.5rem;
+  margin: 3rem 0 2rem;
+  background-color: rgb(189, 251, 171);
+}
+
+section h2, section p{
+  margin: 0 0 0.5rem;
+}
+
+fieldset{
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+label{
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+
+input, textarea{
+  border: none;
+  font-family: 'Roboto';
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #f1f1f1;
+}
+
+button{
+  width: fit-content;
+  margin-top: 1rem;
+}
+
